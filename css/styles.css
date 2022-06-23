@@ -24,6 +24,15 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1, 
+h2, 
+h3, 
+p, 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .btn {
     color: inherit;
     font-family: inherit;
@@ -76,10 +85,6 @@ body {
     background-color: var(--primary-background-color);
 }
 
-.header-logo-accent {
-    color: var(--primary-text-color);
-}
-
 .header .item {
     font-weight: 500;
     font-size: 14px;
@@ -87,12 +92,42 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-contacts {
-    color: var(--secondary-text-color);
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.header-logo-accent {
+    color: var(--primary-text-color);
+}
+
+.nav-list {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .header .current {
     color: var(--accent-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+
+    color: var(--secondary-text-color);
+}
+
+.header-contacts .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 /* INDEX.HTML */
