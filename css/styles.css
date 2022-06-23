@@ -79,9 +79,15 @@ ul {
     margin-right: auto;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Header */
 
 .header {
+    border-bottom: 1px solid #ECECEC;
     background-color: var(--primary-background-color);
 }
 
@@ -134,10 +140,18 @@ ul {
 /* Hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--footer-background-color);
 }
 
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
     color: var(--white-text-color);
 
     font-weight: 900;
@@ -149,6 +163,13 @@ ul {
 }
 
 .order-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+
     color: var(--white-text-color);
     background-color: var(--accent-color);
 
@@ -159,6 +180,28 @@ ul {
 }
 
 /* Section Qualities */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.qualities-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qualities-list .item {
+    width: 270px;
+}
 
 .section-qualities .subtitle {
     font-size: 14px;
@@ -173,19 +216,47 @@ ul {
 
 /* Section Do */
 
+.section-do {
+    padding-top: 0;
+}
+
+.do-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-do .title {
+    margin-bottom: 50px;
+}
+
 /* Section Team */
 
 .section-team {
     background-color: var(--gray-background-color);
 }
 
+.section-team .title {
+    margin-bottom: 50px;
+}
+
+.section-team .list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .section-team .subtitle {
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .section-team .text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
     line-height: 1.19;
 }
 
@@ -227,7 +298,15 @@ ul {
 /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--footer-background-color);
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
 }
 
 .footer-logo-accent {
@@ -235,11 +314,17 @@ ul {
 }
 
 .address {
+    margin-bottom: 9px;
+
     color: var(--white-text-color);
     
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+}
+
+.mail-footer {
+    margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -248,9 +333,4 @@ ul {
     font-size: 14px;
     line-height: 1.71;
 }
-
-
-
-
-
 
