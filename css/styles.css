@@ -130,6 +130,10 @@ ul {
 
 .nav-list {
     display: flex;
+}
+
+.nav-list .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -147,6 +151,12 @@ ul {
     margin-left: auto;
 
     color: var(--secondary-text-color);
+}
+
+.header-contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-contacts .item:not(:last-child) {
@@ -208,6 +218,8 @@ ul {
 }
 
 .section-qualities .subtitle {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -249,9 +261,11 @@ ul {
     text-align: center;
 }
 
-.section-team .subtitle {
-    margin-top: 30px;
+.section-team .item {
+    background-color: var(--primary-background-color);
+}
 
+.section-team .subtitle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -259,9 +273,12 @@ ul {
 
 .section-team .text {
     margin-top: 10px;
-    margin-bottom: 30px;
     
     line-height: 1.19;
+}
+
+.team-container {
+    padding: 30px 0;
 }
 
 /* PORTFOLIO.HTML */
@@ -311,8 +328,8 @@ ul {
 }
 
 .section-portfolio .subtitle {
-    padding: 20px 24px 4px 24px;
-
+    margin-bottom: 4px;
+    
     color: var(--primary-text-color);
 
     font-size: 18px;
@@ -321,12 +338,12 @@ ul {
 }
 
 .section-portfolio .text {
-    padding: 0 24px 20px 24px;
-    
     line-height: 1.88;
 }
 
 .card-border {
+    padding: 20px 24px;
+
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
